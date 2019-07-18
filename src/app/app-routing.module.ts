@@ -1,10 +1,22 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+import { EmployeesComponent } from './employees/employees.component';
 
-const routes: Routes = [];
+export const AppRoutes: Routes = [
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+      {
+        path: '', component: LoginComponent
+      },
+      {
+        path: 'dashboard', component: DashboardComponent
+      },
+      {
+        path: 'employees', component: EmployeesComponent
+      },
+  {
+    path: '**',
+    redirectTo: 'authentication/404'
+  }
+];
