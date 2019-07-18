@@ -17,11 +17,9 @@ import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 
 import { SharedModule } from './shared/shared.module';
-import { SpinnerComponent } from './shared/spinner.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
-import { EmployeesComponent } from './employees/employees.component';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { EmployeesComponent } from './employees/employees.component'; 
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,

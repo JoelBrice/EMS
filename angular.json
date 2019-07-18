@@ -8,7 +8,7 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "sass",
-          "../node_modules/font-awesome/css/font-awesome.css"
+          "font": "../node_modules/font-awesome/css/font-awesome.css"
         }
       },
       "root": "",
@@ -120,12 +120,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "EMS",
-  "schematics": {
-    "@schematics/angular:component": {
-      "styleext": "scss"
-    }
-  }
+    }},
+  "defaultProject": "EMS"
 }
